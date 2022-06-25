@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1_4.Views.VistaReg">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="imgFoto" BackgroundColor="Bisque"
+                   WidthRequest="20" HeightRequest="220" Margin="60,20,60,20"/>
+            
+            <Label Text="Nombre:"/>
+            <Entry x:Name="txtNombre"  Placeholder = "Ingrese el Nombre"/>
+            <Label Text="Descripción:"/>
+            <Entry x:Name="txtDescripcion"  Placeholder = "Ingrese la Descripción"/>
+
+            <Button x:Name="btnTomarFoto" Text="Tomar Foto" Clicked="btnTomarFoto_Clicked"/>
+            <Button x:Name="btnGuardar" Text="A SQLite" Clicked="btnGuardar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
